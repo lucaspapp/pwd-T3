@@ -202,9 +202,9 @@ CREATE TABLE `raiz` (
   `activo` int(2) NOT NULL DEFAULT 1,
   `color` varchar(24) NOT NULL DEFAULT 'BLACK',
   `bkg_color` varchar(24) NOT NULL DEFAULT 'WHITE',
-  `nombre_sitio` text NOT NULL DEFAULT 'Nombre del Sitio',
-  `nombre_institucion` text NOT NULL DEFAULT 'Nombre Institucion',
-  `fuente` text NOT NULL DEFAULT 'VERDANA',
+  `nombre_sitio` varchar(255) NOT NULL DEFAULT 'Nombre del Sitio',
+  `nombre_institucion` varchar(255) NOT NULL DEFAULT 'Nombre Institucion',
+  `fuente` varchar(255) NOT NULL DEFAULT 'VERDANA',
   `color_gral` varchar(24) NOT NULL DEFAULT 'BLACK',
   `bkg_color_gral` varchar(24) NOT NULL DEFAULT 'WHITE'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
