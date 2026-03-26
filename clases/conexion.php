@@ -1,7 +1,7 @@
 <?php
 define ('DB_HOST','localhost');
-define ('DB_USER','root');
-define ('DB_PASS','lp4458');
+define ('DB_USER','lucaspapp');
+define ('DB_PASS','Lucasphp200_');
 define ('DB_NAME','noticias');
 //PRODUCCION
 //define ('DB_HOST','db.tecnica4berazategui.edu.ar');
