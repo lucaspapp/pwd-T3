@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.2.1
+-- version 5.2.3
 -- https://www.phpmyadmin.net/
 --
--- Servidor: 127.0.0.1
--- Tiempo de generación: 26-03-2026 a las 00:34:14
--- Versión del servidor: 10.4.28-MariaDB
--- Versión de PHP: 8.2.4
+-- Servidor: localhost
+-- Tiempo de generación: 10-04-2026 a las 00:25:09
+-- Versión del servidor: 8.0.45-0ubuntu0.24.04.1
+-- Versión de PHP: 8.3.6
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -28,15 +28,15 @@ SET time_zone = "+00:00";
 --
 
 CREATE TABLE `comodin` (
-  `ID_comodin` int(15) NOT NULL,
-  `ID_tecnologia` int(4) NOT NULL,
-  `titulo` text DEFAULT NULL,
-  `Contenido` text DEFAULT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
-  `link_referencia` varchar(100) DEFAULT NULL,
-  `activo` int(2) NOT NULL DEFAULT 1,
-  `orden` int(4) NOT NULL DEFAULT 1,
-  `seccion` varchar(30) NOT NULL DEFAULT 'SABERES'
+  `ID_comodin` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `titulo` text COLLATE utf8mb4_general_ci,
+  `Contenido` text COLLATE utf8mb4_general_ci,
+  `imagen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `link_referencia` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `orden` int NOT NULL DEFAULT '1',
+  `seccion` varchar(30) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'SABERES'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -44,7 +44,18 @@ CREATE TABLE `comodin` (
 --
 
 INSERT INTO `comodin` (`ID_comodin`, `ID_tecnologia`, `titulo`, `Contenido`, `imagen`, `link_referencia`, `activo`, `orden`, `seccion`) VALUES
-(5, 7, '', '<h4><U>Las tres leyes de la robótica</U></h4> \r\n<li>Primera Ley Un robot no hará daño a un ser humano, ni por inacción permitirá que un ser humano sufra daño.</li>\r\n<li>Segunda Ley Un robot debe cumplir las órdenes dadas por los seres humanos, a excepción de aquellas que entren en conflicto con la primera ley.</li>\r\n<li>Tercera Ley Un robot debe proteger su propia existencia en la medida en que esta protección no entre en conflicto con la primera o con la segunda ley.</li><br><br>\r\n\r\n<B>Aparecidas por primera vez en el relato de ISAAC ASIMOV Círculo vicioso (Runaround) de 1942</B><br><br>\r\n', '', '', 1, 1, 'CURIOSIDADES');
+(5, 11, '', '<h4>Historia</h4>\r\nIron Maiden fue fundada en 1975 por <strong>Steve Harris</strong>, quien lideró el proyecto desde sus inicios. Durante sus primeros años, la banda pasó por múltiples cambios de formación hasta estabilizarse a finales de los años 70.<br><br>\r\nEn 1980 lanzaron su álbum debut <strong>Iron Maiden</strong>, logrando reconocimiento dentro de la escena británica. Sin embargo, el gran salto llegó en 1981 con la incorporación del cantante <strong>Bruce Dickinson</strong>.<br><br>\r\nCon Dickinson al frente, la banda alcanzó el éxito mundial con discos como <strong>The Number of the Beast</strong> (1982), que se convirtió en un hito del heavy metal.<br><br>\r\nDurante la década de los 80 publicaron una serie de álbumes exitosos como <strong>Powerslave</strong> y <strong>Seventh Son of a Seventh Son</strong>, consolidando su estilo característico.<br><br>\r\nEn los años 90 atravesaron cambios importantes, incluyendo la salida temporal de Dickinson, pero regresó en 1999 marcando una nueva etapa para la banda.<br><br>\r\nDesde entonces, Iron Maiden ha continuado lanzando discos y realizando giras internacionales, manteniéndose como una de las bandas más importantes del metal.', '', '', 1, 1, 'Historia'),
+(20, 11, '', '<h4>Discografía</h4>\r\n- Iron Maiden (1980)<br>\r\n- Killers (1981)<br>\r\n- The Number of the Beast (1982)<br>\r\n- Powerslave (1984)<br>\r\n- Somewhere in Time (1986)<br>\r\n- Seventh Son of a Seventh Son (1988)<br>\r\n- Brave New World (2000)<br>', '', '', 1, 2, 'Discografia'),
+(21, 11, '', '<h4>Integrantes</h4>\r\n- Bruce Dickinson (voz)<br>\r\n- Steve Harris (bajo)<br>\r\n- Dave Murray (guitarra)<br>\r\n- Adrian Smith (guitarra)<br>\r\n- Janick Gers (guitarra)<br>\r\n- Nicko McBrain (batería)<br>', '', '', 1, 3, 'Integrantes'),
+(25, 13, '', '<h4>Historia</h4>\r\nBlack Sabbath se formó en 1968 en Birmingham con <strong>Ozzy Osbourne</strong>, <strong>Tony Iommi</strong>, <strong>Geezer Butler</strong> y <strong>Bill Ward</strong>.<br><br>\r\nInicialmente tocaban blues rock, pero comenzaron a desarrollar un sonido más pesado y oscuro.<br><br>\r\nEn 1970 lanzaron su debut <strong>Black Sabbath</strong> y poco después <strong>Paranoid</strong>, que los llevó al éxito internacional.<br><br>\r\nDurante los años 70 editaron discos fundamentales como <strong>Master of Reality</strong> y <strong>Sabbath Bloody Sabbath</strong>.<br><br>\r\nLa banda tuvo numerosos cambios de formación, incluyendo la salida de Ozzy Osbourne.<br><br>\r\nA pesar de ello, su influencia fue enorme y sentaron las bases del heavy metal moderno.', '', '', 1, 1, 'Historia'),
+(26, 13, '', '<h4>Discografía</h4>\r\n- Black Sabbath (1970)<br>\r\n- Paranoid (1970)<br>\r\n- Master of Reality (1971)<br>\r\n- Sabbath Bloody Sabbath (1973)<br>', '', '', 1, 2, 'Discografia'),
+(27, 13, '', '<h4>Integrantes</h4>\r\n- Ozzy Osbourne (voz)<br>\r\n- Tony Iommi (guitarra)<br>\r\n- Geezer Butler (bajo)<br>\r\n- Bill Ward (batería)<br>', '', '', 1, 3, 'Integrantes'),
+(29, 14, '', '<h4>Historia</h4>\r\nMetallica fue fundada en 1981 por <strong>James Hetfield</strong> y <strong>Lars Ulrich</strong>.<br><br>\r\nEn sus inicios se destacaron dentro del thrash metal por su velocidad y agresividad, lanzando <strong>Kill Em All</strong> en 1983.<br><br>\r\nEn 1986 publicaron <strong>Master of Puppets</strong>, considerado uno de los mejores discos del género.<br><br>\r\nEse mismo año falleció el bajista Cliff Burton en un accidente, marcando profundamente a la banda.<br><br>\r\nEn 1991 lanzaron el <strong>Black Album</strong>, logrando éxito mundial y ampliando su público.<br><br>\r\nDesde entonces, Metallica se mantuvo como una de las bandas más importantes del metal.', '', '', 1, 1, 'Historia'),
+(30, 14, '', '<h4>Discografía</h4>\r\n- Kill Em All (1983)<br>\r\n- Ride the Lightning (1984)<br>\r\n- Master of Puppets (1986)<br>\r\n- Metallica (1991)<br>', '', '', 1, 2, 'Discografia'),
+(31, 14, '', '<h4>Integrantes</h4>\r\n- James Hetfield (voz, guitarra)<br>\r\n- Lars Ulrich (batería)<br>\r\n- Kirk Hammett (guitarra)<br>\r\n- Robert Trujillo (bajo)<br>', '', '', 1, 3, 'Integrantes'),
+(32, 16, '', '<h4>Historia</h4>\r\nJudas Priest se formó a fines de los años 60 en Inglaterra.<br><br>\r\nDurante los años 70 desarrollaron su sonido característico, alcanzando mayor reconocimiento con discos como <strong>Sad Wings of Destiny</strong>.<br><br>\r\nEn 1980 lograron éxito masivo con <strong>British Steel</strong>, consolidándose como una de las bandas más importantes del género.<br><br>\r\nEl cantante <strong>Rob Halford</strong> se convirtió en una figura icónica del metal.<br><br>\r\nEn 1990 lanzaron <strong>Painkiller</strong>, uno de sus discos más influyentes.<br><br>\r\nA lo largo de su carrera, Judas Priest ha sido una banda clave en la evolución del heavy metal.', '', '', 1, 1, 'Historia'),
+(33, 16, '', '<h4>Discografía</h4>\r\n- Sad Wings of Destiny (1976)<br>\r\n- British Steel (1980)<br>\r\n- Screaming for Vengeance (1982)<br>\r\n- Painkiller (1990)<br>', '', '', 1, 2, 'Discografia'),
+(34, 16, '', '<h4>Integrantes</h4>\r\n- Rob Halford (voz)<br>\r\n- Glenn Tipton (guitarra)<br>\r\n- K.K. Downing (guitarra)<br>\r\n- Ian Hill (bajo)<br>', '', '', 1, 3, 'Integrantes');
 
 -- --------------------------------------------------------
 
@@ -53,13 +64,13 @@ INSERT INTO `comodin` (`ID_comodin`, `ID_tecnologia`, `titulo`, `Contenido`, `im
 --
 
 CREATE TABLE `concursos` (
-  `ID_concurso` int(10) NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL,
-  `nombre_concurso` varchar(100) NOT NULL,
-  `Contenido` text NOT NULL,
-  `link_referencia` varchar(100) NOT NULL,
-  `activo` int(1) NOT NULL DEFAULT 1,
-  `ordenamiento` int(4) NOT NULL
+  `ID_concurso` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `nombre_concurso` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `link_referencia` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `ordenamiento` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -69,16 +80,16 @@ CREATE TABLE `concursos` (
 --
 
 CREATE TABLE `cursos` (
-  `ID_cursos` int(10) NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL,
-  `nombre_curso` varchar(100) NOT NULL,
-  `Contenido` text NOT NULL,
-  `link_referencia` varchar(100) NOT NULL,
-  `activo` int(1) NOT NULL DEFAULT 1,
-  `ordenamiento` int(4) NOT NULL,
-  `modalidad` varchar(30) NOT NULL COMMENT 'presencial-virtual-web',
-  `costo` double DEFAULT 0,
-  `lugar` varchar(100) DEFAULT NULL,
+  `ID_cursos` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `nombre_curso` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `link_referencia` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `ordenamiento` int NOT NULL,
+  `modalidad` varchar(30) COLLATE utf8mb4_general_ci NOT NULL COMMENT 'presencial-virtual-web',
+  `costo` double DEFAULT '0',
+  `lugar` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
   `fecha` date DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
@@ -89,9 +100,9 @@ CREATE TABLE `cursos` (
 --
 
 CREATE TABLE `encuentas` (
-  `ID_encuestas` int(11) NOT NULL,
-  `contenido` text NOT NULL,
-  `ID_tecnologia` int(50) NOT NULL
+  `ID_encuestas` int NOT NULL,
+  `contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `ID_tecnologia` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -101,9 +112,9 @@ CREATE TABLE `encuentas` (
 --
 
 CREATE TABLE `foro` (
-  `ID_foro` int(11) NOT NULL,
-  `Contenido` text NOT NULL,
-  `ID_tecnologia` int(50) NOT NULL
+  `ID_foro` int NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `ID_tecnologia` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -113,14 +124,14 @@ CREATE TABLE `foro` (
 --
 
 CREATE TABLE `historia` (
-  `ID_historia` int(15) NOT NULL,
-  `ID_tecnologia` int(4) NOT NULL,
-  `titulo` text DEFAULT NULL,
-  `Contenido` text NOT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
-  `link_referencia` varchar(100) DEFAULT NULL,
-  `activo` int(2) NOT NULL DEFAULT 1,
-  `orden` int(4) NOT NULL DEFAULT 1
+  `ID_historia` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `titulo` text COLLATE utf8mb4_general_ci,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `link_referencia` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `orden` int NOT NULL DEFAULT '1'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -128,7 +139,8 @@ CREATE TABLE `historia` (
 --
 
 INSERT INTO `historia` (`ID_historia`, `ID_tecnologia`, `titulo`, `Contenido`, `imagen`, `link_referencia`, `activo`, `orden`) VALUES
-(8, 6, '', '<h4><u>Origen de la Computación en la Nube</u></h4>\r\nInternet y las nuevas tecnologías han evolucionado a pasos de gigante. Este concepto, también vinculado a <b>John Mccarthy</b>, creador del lenguaje de programación LISP y pionero en IA. \r\n<br>\r\n<br>\r\nJohn estuvo trabajando en el concepto de uso compartido del tiempo, con el objetivo de que <b>dos o más usuarios pudieran usar un ordenador al mismo tiempo</b>. La razón de esto, reducir gastos, dado que el usuario tendría que pagar solo por el uso de la tecnología.\r\n<br>\r\n<br>\r\nA partir de esa idea y del seminario de Ramnath, surgió el concepto de <b>Cloud Computing o computación en la nube</b>, tal y como lo conocemos hoy. Pero no fueron los únicos que lo mencionaron, sino que también se sumó el científico físico <b>Joseph Carl</b>, pionero en la creación de Internet.\r\n<br>\r\n<br>\r\nJoseph quería sacarle más partido a las computadoras, por lo que trataba de buscar la forma de conectar a las personas, de que hubiera un intercambio de los datos y de la comunicación global. A partir de ahí, surgió <b>ARPANET</b>, una red global de intercambio de comunicación que hizo que la nube pudiera tener cabida. \r\n<br>\r\n<br>\r\nSi bien es cierto que, como todo, hay varias versiones sobre este tema. También hay quienes afirman que el creador fue <b>Amazon</b> o incluso <b>Google</b>. Pero también la propia revista Fio publicó un video donde dijo que fue <b>AT&T</b> quien puso sobre la mesa el concepto de nube por primera vez en la historia.\r\n<br>\r\n<br>\r\nConcretamente, al mostrar la historia de Andy Hertzfeld y Bill Atkinson, ingenieros de Apple Macintosh. Estos ingenieros fundaron la empresa General Magic en el año 1990 y la plataforma de software, Telescriptn. Mientras que en 1994 afirmaron que la nueva IA permitiría enviar emails, hacer compras, controlar el stock y muchas otras funcionalidades. Digamos, que fue por esos maravillosos años cuando este concepto apareció y también ha ido evolucionando con el paso del tiempo.\r\n<br>\r\n<br>\r\nEntre los años <b>2006 a 2008</b>, ya se ofrecía de manera comercial. Tuvo una gran aceptación por parte de empresas de todo tipo, lo que hizo que el procesamiento y almacenamiento de los datos pasase a considerarse un servicio indispensable más, como el agua y la energía. También desde el punto de vista de que <b>el usuario paga por lo que consume</b>, como un servicio más de este tipo.\r\n<br>\r\n<br>\r\nEsto dio lugar a un <b>nuevo modelo de negocio</b> que las empresas han ido adoptando, ya sea por medio de servicios de un tercero o bien integrado en servidores propios. Por lo que, todo esto nos deja una nueva forma de comunicación y de hacer negocios en todo el mundo, que desde luego ha venido para quedarse.\r\n<br>\r\n<br>\r\n<h4><u>La Computación en la Nube como la conocemos hoy</u></h4>\r\nHace ya un tiempo desde que surgió este concepto por primera vez, pero a lo largo de todo este tiempo no ha parado de evolucionar. Digamos que, la computación en la nube abarca multitud de servicios y también es conocida únicamente como la <b>«nube«</b>. Una red de <b>servidores remotos</b> que están conectados a Internet con el objetivo de almacenar, administrar y procesar los datos, servidores, BD, redes y software. \r\n<br>\r\n<br>\r\nSe ha vuelto indispensable y está a la orden del día para empresas y también para particulares. Por eso muchas empresas ya ofrecen este servicio de almacenamiento en la nube, para que los clientes puedan tener sus <b>datos a salvo, frente a desastres</b>.\r\n<br>\r\n<br>\r\n<h4><u>Aunque tengas datos en la nube, ¡Es importante hacer copias de los datos!</u></h4>\r\nLo cierto, es que no basta con tener los datos en la nube. Si bien es cierto que es una práctica habitual, dado que hoy en día las empresas y los usuarios particulares utilizan determinados software que almacenan los datos en la nube. Por ejemplo, Google Docs u otras herramientas como Canva. Son apps populares y que nos permiten manejarlo todo directamente en la nube, sin necesidad de descargarnos nada a local. Pero, ¿es lo mejor?\r\n<br>\r\n<br>\r\n<b>Lo ideal, por seguridad, es hacer copias de los datos</b>. Es decir, aunque utilices programas que almacenen toda la información en la nube, es recomendable hacer un <b>respaldo</b> de dichos datos. Es de esta manera como se puede trabajar con más seguridad, sabiendo que todo está a buen recaudo.\r\n<br>\r\n<br>\r\nRecuerda que con nuestras soluciones de <b>copias de seguridad</b> todo es más sencillo, porque no tendrás que preocuparte por nada. No perderás tus datos aunque una web sea hackeada, sufra un DDOS o un ransomware, siempre tendrás una copia extra a tu disposición.   ', 'cl_1.png', '', 1, 9);
+(8, 11, '', '<h4>Historia</h4>\r\nIron Maiden fue fundada en 1975 por <strong>Steve Harris</strong>, quien lideró el proyecto desde sus inicios. Durante sus primeros años, la banda pasó por múltiples cambios de formación hasta estabilizarse a finales de los años 70.<br><br>\r\nEn 1980 lanzaron su álbum debut <strong>Iron Maiden</strong>, logrando reconocimiento dentro de la escena británica. Sin embargo, el gran salto llegó en 1981 con la incorporación del cantante <strong>Bruce Dickinson</strong>.<br><br>\r\nCon Dickinson al frente, la banda alcanzó el éxito mundial con discos como <strong>The Number of the Beast</strong> (1982), que se convirtió en un hito del heavy metal.<br><br>\r\nDurante la década de los 80 publicaron una serie de álbumes exitosos como <strong>Powerslave</strong> y <strong>Seventh Son of a Seventh Son</strong>, consolidando su estilo característico.<br><br>\r\nEn los años 90 atravesaron cambios importantes, incluyendo la salida temporal de Dickinson, pero regresó en 1999 marcando una nueva etapa para la banda.<br><br>\r\nDesde entonces, Iron Maiden ha continuado lanzando discos y realizando giras internacionales, manteniéndose como una de las bandas más importantes del metal.', 'cl_1.png', '', 1, 1),
+(27, 12, '', '<h4>Historia</h4>\r\nAlmafuerte fue formada en 1995 por <strong>Ricardo Iorio</strong> tras la disolución de Hermética, una de las bandas más influyentes del metal argentino.<br><br>\r\nCon Almafuerte, Iorio buscó desarrollar un proyecto más personal, incorporando elementos del folklore y la cultura nacional en su música.<br><br>\r\nEl debut llegó con <strong>Mundo Guanaco</strong> (1995), seguido por <strong>Del Entorno</strong> (1996), discos que consolidaron rápidamente su popularidad.<br><br>\r\nDurante los años siguientes, la banda se posicionó como una de las más importantes del país, con una fuerte conexión con su público.<br><br>\r\nA lo largo de su carrera, Almafuerte mantuvo una base de seguidores muy fiel y se convirtió en un símbolo del heavy metal argentino.<br><br>\r\nSu legado continúa siendo fundamental dentro de la escena nacional.', 'cl_1.png', '', 1, 1);
 
 -- --------------------------------------------------------
 
@@ -137,9 +149,9 @@ INSERT INTO `historia` (`ID_historia`, `ID_tecnologia`, `titulo`, `Contenido`, `
 --
 
 CREATE TABLE `links` (
-  `ID_links` int(15) NOT NULL,
-  `Contenido` text NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL
+  `ID_links` int NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `ID_tecnologia` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -149,16 +161,16 @@ CREATE TABLE `links` (
 --
 
 CREATE TABLE `misc` (
-  `ID_misc` int(10) NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `Contenido` text NOT NULL,
-  `link_referencia` varchar(100) NOT NULL,
-  `activo` int(1) NOT NULL DEFAULT 1,
-  `ordenamiento` int(4) NOT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
-  `pos_FC` varchar(6) DEFAULT 'F1C1',
-  `link_local` varchar(100) DEFAULT NULL
+  `ID_misc` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `nombre` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `link_referencia` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `ordenamiento` int NOT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `pos_FC` varchar(6) COLLATE utf8mb4_general_ci DEFAULT 'F1C1',
+  `link_local` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 -- --------------------------------------------------------
@@ -168,14 +180,14 @@ CREATE TABLE `misc` (
 --
 
 CREATE TABLE `quees` (
-  `ID_quees` int(10) NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL,
-  `titulo` varchar(100) NOT NULL,
-  `Contenido` text NOT NULL,
-  `imagen` varchar(100) DEFAULT NULL,
-  `link_referencia` text NOT NULL,
-  `activo` int(1) NOT NULL DEFAULT 1,
-  `orden` int(4) NOT NULL
+  `ID_quees` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `titulo` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `link_referencia` text COLLATE utf8mb4_general_ci NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `orden` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -192,21 +204,21 @@ INSERT INTO `quees` (`ID_quees`, `ID_tecnologia`, `titulo`, `Contenido`, `imagen
 --
 
 CREATE TABLE `raiz` (
-  `ID_raiz` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `abreviatura` varchar(4) DEFAULT NULL,
-  `resumen` varchar(250) DEFAULT NULL,
-  `definicion` text NOT NULL,
-  `logo` varchar(30) DEFAULT NULL,
-  `orden` int(2) NOT NULL,
-  `activo` int(2) NOT NULL DEFAULT 1,
-  `color` varchar(24) NOT NULL DEFAULT 'BLACK',
-  `bkg_color` varchar(24) NOT NULL DEFAULT 'WHITE',
-  `nombre_sitio` varchar(255) NOT NULL DEFAULT 'Nombre del Sitio',
-  `nombre_institucion` varchar(255) NOT NULL DEFAULT 'Nombre Institucion',
-  `fuente` varchar(255) NOT NULL DEFAULT 'VERDANA',
-  `color_gral` varchar(24) NOT NULL DEFAULT 'BLACK',
-  `bkg_color_gral` varchar(24) NOT NULL DEFAULT 'WHITE'
+  `ID_raiz` int NOT NULL,
+  `nombre` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `abreviatura` varchar(4) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `resumen` varchar(250) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `definicion` text COLLATE utf8mb4_general_ci NOT NULL,
+  `logo` varchar(30) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `orden` int NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `color` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'BLACK',
+  `bkg_color` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'WHITE',
+  `nombre_sitio` varchar(255) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Nombre del Sitio',
+  `nombre_institucion` varchar(255) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Nombre Institucion',
+  `fuente` varchar(255) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'VERDANA',
+  `color_gral` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'BLACK',
+  `bkg_color_gral` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'WHITE'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -214,7 +226,7 @@ CREATE TABLE `raiz` (
 --
 
 INSERT INTO `raiz` (`ID_raiz`, `nombre`, `abreviatura`, `resumen`, `definicion`, `logo`, `orden`, `activo`, `color`, `bkg_color`, `nombre_sitio`, `nombre_institucion`, `fuente`, `color_gral`, `bkg_color_gral`) VALUES
-(0, 'Guitarras', 'G', 'Viejas y nuevas - Electricas -Acústicas                                                                                                                                                                         ', 'Este sitio fué pensado para recopilar toda la variada información referida a todo tipo de guitarras.<br><br>\r\n\r\n<li>Cual es el sentido de incorporar estos cambios ? </li>\r\n<li>Cual es la ética que domina estos cambios ?</li> \r\n<li>Cuales son los beneficios y quienes disfrutan de esos beneficios ?</li>\r\n<li>Podemos acceder a estos beneficios ?</li>\r\n<li>Que tenemos que cambiar para implementar estas tendencias ?</li><br>                                                                                                                                                                                                                                                                                                         ', 'logo_p40.png', 1, 1, '#ffffff', '#000000', 'Guitarras del Mundo', 'Proyectos Personales', 'calibri', '#f70428', '#dbdbdb');
+(0, 'Heavy Metal Internacional', 'UHM', 'Universo del Heavy Metal Internacional        ', 'El heavy metal es mucho más que un género musical: es una cultura, una forma de vida y una expresión de identidad que ha evolucionado desde finales de los años 60 hasta la actualidad. Con riffs potentes, letras profundas y una estética única, el metal ha dado lugar a innumerables bandas legendarias y subgéneros.\r\n\r\nEn este sitio vas a encontrar información sobre algunas de las bandas más influyentes del heavy metal, explorando su historia, discografía, integrantes y legado.           ', 'logo_p40.png', 1, 1, '#ffffff', '#000000', 'Heavy Metal Internacional', 'E.E.S.T. N4', 'calibri', '#f70428', '#dbdbdb');
 
 -- --------------------------------------------------------
 
@@ -223,14 +235,14 @@ INSERT INTO `raiz` (`ID_raiz`, `nombre`, `abreviatura`, `resumen`, `definicion`,
 --
 
 CREATE TABLE `recursos` (
-  `ID_recurso` int(10) NOT NULL,
-  `ID_tecnologia` int(10) NOT NULL,
-  `titulo` varchar(100) NOT NULL,
-  `Contenido` text NOT NULL,
-  `link_referencia` text NOT NULL,
-  `activo` int(1) NOT NULL DEFAULT 1,
-  `orden` int(4) NOT NULL,
-  `imagen` varchar(100) DEFAULT NULL
+  `ID_recurso` int NOT NULL,
+  `ID_tecnologia` int NOT NULL,
+  `titulo` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Contenido` text COLLATE utf8mb4_general_ci NOT NULL,
+  `link_referencia` text COLLATE utf8mb4_general_ci NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `orden` int NOT NULL,
+  `imagen` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -247,13 +259,13 @@ INSERT INTO `recursos` (`ID_recurso`, `ID_tecnologia`, `titulo`, `Contenido`, `l
 --
 
 CREATE TABLE `secciones` (
-  `id_seccion` int(4) NOT NULL,
-  `nombre` varchar(30) NOT NULL,
-  `orden` int(2) NOT NULL,
-  `id_tecnologia` int(11) NOT NULL,
-  `enlace` varchar(40) DEFAULT NULL,
-  `Activo` int(5) NOT NULL,
-  `enlace_cms` varchar(100) DEFAULT NULL
+  `id_seccion` int NOT NULL,
+  `nombre` varchar(30) COLLATE utf8mb4_general_ci NOT NULL,
+  `orden` int NOT NULL,
+  `id_tecnologia` int NOT NULL,
+  `enlace` varchar(40) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Activo` int NOT NULL,
+  `enlace_cms` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -261,7 +273,18 @@ CREATE TABLE `secciones` (
 --
 
 INSERT INTO `secciones` (`id_seccion`, `nombre`, `orden`, `id_tecnologia`, `enlace`, `Activo`, `enlace_cms`) VALUES
-(2, 'HISTORIA ', 1, 1, 'historia.php', 1, 'historia_cms.php');
+(70, 'Historia', 1, 11, 'comodin.php', 1, 'comodin_cms.php'),
+(71, 'Discografia', 2, 11, 'comodin.php', 1, 'comodin_cms.php'),
+(72, 'Integrantes', 3, 11, 'comodin.php', 1, 'comodin_cms.php'),
+(77, 'Historia', 1, 13, 'comodin.php', 1, 'comodin_cms.php'),
+(78, 'Discografia', 2, 13, 'comodin.php', 1, 'comodin_cms.php'),
+(79, 'Integrantes', 3, 13, 'comodin.php', 1, 'comodin_cms.php'),
+(80, 'Historia', 1, 14, 'comodin.php', 1, 'comodin_cms.php'),
+(81, 'Discografia', 2, 14, 'comodin.php', 1, 'comodin_cms.php'),
+(82, 'Integrantes', 3, 14, 'comodin.php', 1, 'comodin_cms.php'),
+(88, 'Historia', 1, 16, 'comodin.php', 1, 'comodin_cms.php'),
+(89, 'Discografia', 2, 16, 'comodin.php', 1, 'comodin_cms.php'),
+(90, 'Integrantes', 3, 16, 'comodin.php', 1, 'comodin_cms.php');
 
 -- --------------------------------------------------------
 
@@ -270,17 +293,27 @@ INSERT INTO `secciones` (`id_seccion`, `nombre`, `orden`, `id_tecnologia`, `enla
 --
 
 CREATE TABLE `tecnologias` (
-  `ID_tecnologia` int(11) NOT NULL,
-  `nombre` varchar(100) NOT NULL,
-  `abreviatura` varchar(4) DEFAULT NULL,
-  `resumen` varchar(250) DEFAULT NULL,
-  `definicion` text NOT NULL,
-  `logo` varchar(30) DEFAULT NULL,
-  `orden` int(2) NOT NULL,
-  `activo` int(2) NOT NULL DEFAULT 1,
-  `color` varchar(24) NOT NULL DEFAULT 'BLACK',
-  `bkg_color` varchar(24) NOT NULL DEFAULT 'WHITE'
+  `ID_tecnologia` int NOT NULL,
+  `nombre` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `abreviatura` varchar(4) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `resumen` varchar(250) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `definicion` text COLLATE utf8mb4_general_ci NOT NULL,
+  `logo` varchar(30) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `orden` int NOT NULL,
+  `activo` int NOT NULL DEFAULT '1',
+  `color` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'BLACK',
+  `bkg_color` varchar(24) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'WHITE'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
+
+--
+-- Volcado de datos para la tabla `tecnologias`
+--
+
+INSERT INTO `tecnologias` (`ID_tecnologia`, `nombre`, `abreviatura`, `resumen`, `definicion`, `logo`, `orden`, `activo`, `color`, `bkg_color`) VALUES
+(11, 'Iron Maiden', 'IR', 'Introduccion a Iron Maiden           ', '<h4>Introducción</h4>\r\n<strong>Iron Maiden</strong> es una banda británica de heavy metal formada en 1975 en Londres por Steve Harris. Es una de las bandas más influyentes del género y una de las principales representantes de la New Wave of British Heavy Metal.<br><br>\r\nSu música se caracteriza por melodías elaboradas, guitarras armonizadas y letras épicas.', '', 1, 1, '', ''),
+(13, 'Black Sabbath', 'BS', 'Introduccion a Black Sabbath      ', '<h4>Introducción</h4>\r\n<strong>Black Sabbath</strong> es una banda británica formada en 1968 y considerada la creadora del heavy metal.<br><br>\r\nSu sonido oscuro y pesado revolucionó la música rock y dio origen a un nuevo género.', '', 3, 1, '', ''),
+(14, 'Metallica', 'M', 'Introduccion a Metallica', '<h4>Introducción</h4>\r\n<strong>Metallica</strong> es una banda estadounidense de thrash metal formada en 1981. Es una de las bandas más exitosas e influyentes de la historia del metal.<br><br>', '', 4, 1, '', ''),
+(16, 'Judas Priest', 'JP', 'Introduccion a Judas Priest', '<h4>Introducción</h4>\r\n<strong>Judas Priest</strong> es una banda británica formada en 1969 y una de las más influyentes en la historia del heavy metal.<br><br>\r\nAyudaron a definir tanto el sonido como la estética del género.', '', 5, 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -289,15 +322,15 @@ CREATE TABLE `tecnologias` (
 --
 
 CREATE TABLE `usuarios` (
-  `ID_usuario` int(11) NOT NULL,
-  `nombre` varchar(50) NOT NULL,
-  `telefono` varchar(15) DEFAULT NULL,
-  `roles` varchar(200) NOT NULL DEFAULT 'Invitado' COMMENT 'Invitado,\r\nAdministrador,\r\nColaborador,\r\nModerador,\r\nSupervisor',
-  `email` varchar(150) NOT NULL,
-  `password` varchar(100) NOT NULL,
-  `Permisos` varchar(10) DEFAULT NULL COMMENT 'por cada rol que tiene el usuario ,debe ir una letra especificando los permisos que tiene dentro de ese rol \r\nT:todos,\r\nL:Leer,\r\nA: L + Agregar\r\nE: L + A + Modificar\r\nB: L + A + M + Borrar\r\n',
-  `Institucion` varchar(100) DEFAULT NULL,
-  `Rol_institucion` varchar(100) DEFAULT NULL
+  `ID_usuario` int NOT NULL,
+  `nombre` varchar(50) COLLATE utf8mb4_general_ci NOT NULL,
+  `telefono` varchar(15) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `roles` varchar(200) COLLATE utf8mb4_general_ci NOT NULL DEFAULT 'Invitado' COMMENT 'Invitado,\r\nAdministrador,\r\nColaborador,\r\nModerador,\r\nSupervisor',
+  `email` varchar(150) COLLATE utf8mb4_general_ci NOT NULL,
+  `password` varchar(100) COLLATE utf8mb4_general_ci NOT NULL,
+  `Permisos` varchar(10) COLLATE utf8mb4_general_ci DEFAULT NULL COMMENT 'por cada rol que tiene el usuario ,debe ir una letra especificando los permisos que tiene dentro de ese rol \r\nT:todos,\r\nL:Leer,\r\nA: L + Agregar\r\nE: L + A + Modificar\r\nB: L + A + M + Borrar\r\n',
+  `Institucion` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL,
+  `Rol_institucion` varchar(100) COLLATE utf8mb4_general_ci DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
@@ -425,79 +458,79 @@ ALTER TABLE `usuarios`
 -- AUTO_INCREMENT de la tabla `comodin`
 --
 ALTER TABLE `comodin`
-  MODIFY `ID_comodin` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
+  MODIFY `ID_comodin` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=35;
 
 --
 -- AUTO_INCREMENT de la tabla `concursos`
 --
 ALTER TABLE `concursos`
-  MODIFY `ID_concurso` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_concurso` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `cursos`
 --
 ALTER TABLE `cursos`
-  MODIFY `ID_cursos` int(10) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_cursos` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `encuentas`
 --
 ALTER TABLE `encuentas`
-  MODIFY `ID_encuestas` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_encuestas` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `foro`
 --
 ALTER TABLE `foro`
-  MODIFY `ID_foro` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_foro` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `historia`
 --
 ALTER TABLE `historia`
-  MODIFY `ID_historia` int(15) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=27;
+  MODIFY `ID_historia` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=28;
 
 --
 -- AUTO_INCREMENT de la tabla `links`
 --
 ALTER TABLE `links`
-  MODIFY `ID_links` int(15) NOT NULL AUTO_INCREMENT;
+  MODIFY `ID_links` int NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT de la tabla `misc`
 --
 ALTER TABLE `misc`
-  MODIFY `ID_misc` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `ID_misc` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT de la tabla `quees`
 --
 ALTER TABLE `quees`
-  MODIFY `ID_quees` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
+  MODIFY `ID_quees` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=22;
 
 --
 -- AUTO_INCREMENT de la tabla `recursos`
 --
 ALTER TABLE `recursos`
-  MODIFY `ID_recurso` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `ID_recurso` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 
 --
 -- AUTO_INCREMENT de la tabla `secciones`
 --
 ALTER TABLE `secciones`
-  MODIFY `id_seccion` int(4) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=70;
+  MODIFY `id_seccion` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
 
 --
 -- AUTO_INCREMENT de la tabla `tecnologias`
 --
 ALTER TABLE `tecnologias`
-  MODIFY `ID_tecnologia` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
+  MODIFY `ID_tecnologia` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
 --
 ALTER TABLE `usuarios`
-  MODIFY `ID_usuario` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
+  MODIFY `ID_usuario` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
