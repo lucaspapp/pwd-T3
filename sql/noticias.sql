@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: localhost
--- Tiempo de generación: 10-04-2026 a las 00:25:09
+-- Tiempo de generación: 30-04-2026 a las 22:05:16
 -- Versión del servidor: 8.0.45-0ubuntu0.24.04.1
 -- Versión de PHP: 8.3.6
 
@@ -44,18 +44,18 @@ CREATE TABLE `comodin` (
 --
 
 INSERT INTO `comodin` (`ID_comodin`, `ID_tecnologia`, `titulo`, `Contenido`, `imagen`, `link_referencia`, `activo`, `orden`, `seccion`) VALUES
-(5, 11, '', '<h4>Historia</h4>\r\nIron Maiden fue fundada en 1975 por <strong>Steve Harris</strong>, quien lideró el proyecto desde sus inicios. Durante sus primeros años, la banda pasó por múltiples cambios de formación hasta estabilizarse a finales de los años 70.<br><br>\r\nEn 1980 lanzaron su álbum debut <strong>Iron Maiden</strong>, logrando reconocimiento dentro de la escena británica. Sin embargo, el gran salto llegó en 1981 con la incorporación del cantante <strong>Bruce Dickinson</strong>.<br><br>\r\nCon Dickinson al frente, la banda alcanzó el éxito mundial con discos como <strong>The Number of the Beast</strong> (1982), que se convirtió en un hito del heavy metal.<br><br>\r\nDurante la década de los 80 publicaron una serie de álbumes exitosos como <strong>Powerslave</strong> y <strong>Seventh Son of a Seventh Son</strong>, consolidando su estilo característico.<br><br>\r\nEn los años 90 atravesaron cambios importantes, incluyendo la salida temporal de Dickinson, pero regresó en 1999 marcando una nueva etapa para la banda.<br><br>\r\nDesde entonces, Iron Maiden ha continuado lanzando discos y realizando giras internacionales, manteniéndose como una de las bandas más importantes del metal.', '', '', 1, 1, 'Historia'),
-(20, 11, '', '<h4>Discografía</h4>\r\n- Iron Maiden (1980)<br>\r\n- Killers (1981)<br>\r\n- The Number of the Beast (1982)<br>\r\n- Powerslave (1984)<br>\r\n- Somewhere in Time (1986)<br>\r\n- Seventh Son of a Seventh Son (1988)<br>\r\n- Brave New World (2000)<br>', '', '', 1, 2, 'Discografia'),
-(21, 11, '', '<h4>Integrantes</h4>\r\n- Bruce Dickinson (voz)<br>\r\n- Steve Harris (bajo)<br>\r\n- Dave Murray (guitarra)<br>\r\n- Adrian Smith (guitarra)<br>\r\n- Janick Gers (guitarra)<br>\r\n- Nicko McBrain (batería)<br>', '', '', 1, 3, 'Integrantes'),
-(25, 13, '', '<h4>Historia</h4>\r\nBlack Sabbath se formó en 1968 en Birmingham con <strong>Ozzy Osbourne</strong>, <strong>Tony Iommi</strong>, <strong>Geezer Butler</strong> y <strong>Bill Ward</strong>.<br><br>\r\nInicialmente tocaban blues rock, pero comenzaron a desarrollar un sonido más pesado y oscuro.<br><br>\r\nEn 1970 lanzaron su debut <strong>Black Sabbath</strong> y poco después <strong>Paranoid</strong>, que los llevó al éxito internacional.<br><br>\r\nDurante los años 70 editaron discos fundamentales como <strong>Master of Reality</strong> y <strong>Sabbath Bloody Sabbath</strong>.<br><br>\r\nLa banda tuvo numerosos cambios de formación, incluyendo la salida de Ozzy Osbourne.<br><br>\r\nA pesar de ello, su influencia fue enorme y sentaron las bases del heavy metal moderno.', '', '', 1, 1, 'Historia'),
-(26, 13, '', '<h4>Discografía</h4>\r\n- Black Sabbath (1970)<br>\r\n- Paranoid (1970)<br>\r\n- Master of Reality (1971)<br>\r\n- Sabbath Bloody Sabbath (1973)<br>', '', '', 1, 2, 'Discografia'),
-(27, 13, '', '<h4>Integrantes</h4>\r\n- Ozzy Osbourne (voz)<br>\r\n- Tony Iommi (guitarra)<br>\r\n- Geezer Butler (bajo)<br>\r\n- Bill Ward (batería)<br>', '', '', 1, 3, 'Integrantes'),
-(29, 14, '', '<h4>Historia</h4>\r\nMetallica fue fundada en 1981 por <strong>James Hetfield</strong> y <strong>Lars Ulrich</strong>.<br><br>\r\nEn sus inicios se destacaron dentro del thrash metal por su velocidad y agresividad, lanzando <strong>Kill Em All</strong> en 1983.<br><br>\r\nEn 1986 publicaron <strong>Master of Puppets</strong>, considerado uno de los mejores discos del género.<br><br>\r\nEse mismo año falleció el bajista Cliff Burton en un accidente, marcando profundamente a la banda.<br><br>\r\nEn 1991 lanzaron el <strong>Black Album</strong>, logrando éxito mundial y ampliando su público.<br><br>\r\nDesde entonces, Metallica se mantuvo como una de las bandas más importantes del metal.', '', '', 1, 1, 'Historia'),
-(30, 14, '', '<h4>Discografía</h4>\r\n- Kill Em All (1983)<br>\r\n- Ride the Lightning (1984)<br>\r\n- Master of Puppets (1986)<br>\r\n- Metallica (1991)<br>', '', '', 1, 2, 'Discografia'),
-(31, 14, '', '<h4>Integrantes</h4>\r\n- James Hetfield (voz, guitarra)<br>\r\n- Lars Ulrich (batería)<br>\r\n- Kirk Hammett (guitarra)<br>\r\n- Robert Trujillo (bajo)<br>', '', '', 1, 3, 'Integrantes'),
-(32, 16, '', '<h4>Historia</h4>\r\nJudas Priest se formó a fines de los años 60 en Inglaterra.<br><br>\r\nDurante los años 70 desarrollaron su sonido característico, alcanzando mayor reconocimiento con discos como <strong>Sad Wings of Destiny</strong>.<br><br>\r\nEn 1980 lograron éxito masivo con <strong>British Steel</strong>, consolidándose como una de las bandas más importantes del género.<br><br>\r\nEl cantante <strong>Rob Halford</strong> se convirtió en una figura icónica del metal.<br><br>\r\nEn 1990 lanzaron <strong>Painkiller</strong>, uno de sus discos más influyentes.<br><br>\r\nA lo largo de su carrera, Judas Priest ha sido una banda clave en la evolución del heavy metal.', '', '', 1, 1, 'Historia'),
-(33, 16, '', '<h4>Discografía</h4>\r\n- Sad Wings of Destiny (1976)<br>\r\n- British Steel (1980)<br>\r\n- Screaming for Vengeance (1982)<br>\r\n- Painkiller (1990)<br>', '', '', 1, 2, 'Discografia'),
-(34, 16, '', '<h4>Integrantes</h4>\r\n- Rob Halford (voz)<br>\r\n- Glenn Tipton (guitarra)<br>\r\n- K.K. Downing (guitarra)<br>\r\n- Ian Hill (bajo)<br>', '', '', 1, 3, 'Integrantes');
+(1, 1, 'Iron Maiden', '<h4>Historia</h4>\r\nIron Maiden fue fundada en 1975 por <strong>Steve Harris</strong>, quien lideró el proyecto desde sus inicios. Durante sus primeros años, la banda pasó por múltiples cambios de formación hasta estabilizarse a finales de los años 70.<br><br>\r\nEn 1980 lanzaron su álbum debut <strong>Iron Maiden</strong>, logrando reconocimiento dentro de la escena británica. Sin embargo, el gran salto llegó en 1981 con la incorporación del cantante <strong>Bruce Dickinson</strong>.<br><br>\r\nCon Dickinson al frente, la banda alcanzó el éxito mundial con discos como <strong>The Number of the Beast</strong> (1982), que se convirtió en un hito del heavy metal.<br><br>\r\nDurante la década de los 80 publicaron una serie de álbumes exitosos como <strong>Powerslave</strong> y <strong>Seventh Son of a Seventh Son</strong>, consolidando su estilo característico.<br><br>\r\nEn los años 90 atravesaron cambios importantes, incluyendo la salida temporal de Dickinson, pero regresó en 1999 marcando una nueva etapa para la banda.<br><br>\r\nDesde entonces, Iron Maiden ha continuado lanzando discos y realizando giras internacionales, manteniéndose como una de las bandas más importantes del metal.\r\n<br>\r\n<img src=\"images/ir.jpg\" alt=\"Foto de los integrantes de Iron Maiden\" style=\"width: 100%; height: 100%; object-fit: contain;\">', '', 'https://www.ironmaiden.com/', 1, 1, 'Historia'),
+(2, 1, '', '<h4>Discografía</h4>\r\n- Iron Maiden (1980)<br>\r\n- Killers (1981)<br>\r\n- The Number of the Beast (1982)<br>\r\n- Powerslave (1984)<br>\r\n- Somewhere in Time (1986)<br>\r\n- Seventh Son of a Seventh Son (1988)<br>\r\n- Brave New World (2000)<br>', '', '', 1, 2, 'Discografia'),
+(3, 1, '', '<h4>Integrantes</h4>\r\n- Bruce Dickinson (voz)<br>\r\n- Steve Harris (bajo)<br>\r\n- Dave Murray (guitarra)<br>\r\n- Adrian Smith (guitarra)<br>\r\n- Janick Gers (guitarra)<br>\r\n- Nicko McBrain (batería)<br>', '', '', 1, 3, 'Integrantes'),
+(4, 2, 'Black Sabbath', '<h4>Historia</h4>\r\nBlack Sabbath se formó en 1968 en Birmingham con <strong>Ozzy Osbourne</strong>, <strong>Tony Iommi</strong>, <strong>Geezer Butler</strong> y <strong>Bill Ward</strong>.<br><br>\r\nInicialmente tocaban blues rock, pero comenzaron a desarrollar un sonido más pesado y oscuro.<br><br>\r\nEn 1970 lanzaron su debut <strong>Black Sabbath</strong> y poco después <strong>Paranoid</strong>, que los llevó al éxito internacional.<br><br>\r\nDurante los años 70 editaron discos fundamentales como <strong>Master of Reality</strong> y <strong>Sabbath Bloody Sabbath</strong>.<br><br>\r\nLa banda tuvo numerosos cambios de formación, incluyendo la salida de Ozzy Osbourne.<br><br>\r\nA pesar de ello, su influencia fue enorme y sentaron las bases del heavy metal moderno.\r\n\r\n<img src=\"images/bs.png\" alt=\"Foto de los integrantes de black sabbath\" style=\"width: 100%; height: 100%; object-fit: contain;\">', '', 'https://www.blacksabbath.com/', 1, 1, 'Historia'),
+(5, 2, '', '<h4>Discografía</h4>\r\n- Black Sabbath (1970)<br>\r\n- Paranoid (1970)<br>\r\n- Master of Reality (1971)<br>\r\n- Sabbath Bloody Sabbath (1973)<br>', '', '', 1, 2, 'Discografia'),
+(6, 2, '', '<h4>Integrantes</h4>\r\n- Ozzy Osbourne (voz)<br>\r\n- Tony Iommi (guitarra)<br>\r\n- Geezer Butler (bajo)<br>\r\n- Bill Ward (batería)<br>', '', '', 1, 3, 'Integrantes'),
+(7, 3, 'Metallica', '<h4>Historia</h4>\r\nMetallica fue fundada en 1981 por <strong>James Hetfield</strong> y <strong>Lars Ulrich</strong>.<br><br>\r\nEn sus inicios se destacaron dentro del thrash metal por su velocidad y agresividad, lanzando <strong>Kill Em All</strong> en 1983.<br><br>\r\nEn 1986 publicaron <strong>Master of Puppets</strong>, considerado uno de los mejores discos del género.<br><br>\r\nEse mismo año falleció el bajista Cliff Burton en un accidente, marcando profundamente a la banda.<br><br>\r\nEn 1991 lanzaron el <strong>Black Album</strong>, logrando éxito mundial y ampliando su público.<br><br>\r\nDesde entonces, Metallica se mantuvo como una de las bandas más importantes del metal.\r\n<br>\r\n<img src=\"images/ml.jpeg\" alt=\"Foto integrantes de metallica\" style=\"width: 100%; height: 100%; object-fit: contain;\">', '', 'https://www.metallica.com/', 1, 1, 'Historia'),
+(8, 3, '', '<h4>Discografía</h4>\r\n- Kill Em All (1983)<br>\r\n- Ride the Lightning (1984)<br>\r\n- Master of Puppets (1986)<br>\r\n- Metallica (1991)<br>', '', '', 1, 2, 'Discografia'),
+(9, 3, '', '<h4>Integrantes</h4>\r\n- James Hetfield (voz, guitarra)<br>\r\n- Lars Ulrich (batería)<br>\r\n- Kirk Hammett (guitarra)<br>\r\n- Robert Trujillo (bajo)<br>', '', '', 1, 3, 'Integrantes'),
+(10, 4, 'Judas Priest', '<h4>Historia</h4>\r\nJudas Priest se formó a fines de los años 60 en Inglaterra.<br><br>\r\nDurante los años 70 desarrollaron su sonido característico, alcanzando mayor reconocimiento con discos como <strong>Sad Wings of Destiny</strong>.<br><br>\r\nEn 1980 lograron éxito masivo con <strong>British Steel</strong>, consolidándose como una de las bandas más importantes del género.<br><br>\r\nEl cantante <strong>Rob Halford</strong> se convirtió en una figura icónica del metal.<br><br>\r\nEn 1990 lanzaron <strong>Painkiller</strong>, uno de sus discos más influyentes.<br><br>\r\nA lo largo de su carrera, Judas Priest ha sido una banda clave en la evolución del heavy metal.\r\n<br>\r\n<img src=\"images/jp.jpg\" alt=\"Foto integrantes de Judas Priest\" style=\"width: 100%; height: 100%; object-fit: contain;\">', '', 'https://judaspriest.com/', 1, 1, 'Historia'),
+(11, 4, '', '<h4>Discografía</h4>\r\n- Sad Wings of Destiny (1976)<br>\r\n- British Steel (1980)<br>\r\n- Screaming for Vengeance (1982)<br>\r\n- Painkiller (1990)<br>', '', '', 1, 2, 'Discografia'),
+(12, 4, '', '<h4>Integrantes</h4>\r\n- Rob Halford (voz)<br>\r\n- Glenn Tipton (guitarra)<br>\r\n- K.K. Downing (guitarra)<br>\r\n- Ian Hill (bajo)<br>', '', '', 1, 3, 'Integrantes');
 
 -- --------------------------------------------------------
 
@@ -226,7 +226,7 @@ CREATE TABLE `raiz` (
 --
 
 INSERT INTO `raiz` (`ID_raiz`, `nombre`, `abreviatura`, `resumen`, `definicion`, `logo`, `orden`, `activo`, `color`, `bkg_color`, `nombre_sitio`, `nombre_institucion`, `fuente`, `color_gral`, `bkg_color_gral`) VALUES
-(0, 'Heavy Metal Internacional', 'UHM', 'Universo del Heavy Metal Internacional        ', 'El heavy metal es mucho más que un género musical: es una cultura, una forma de vida y una expresión de identidad que ha evolucionado desde finales de los años 60 hasta la actualidad. Con riffs potentes, letras profundas y una estética única, el metal ha dado lugar a innumerables bandas legendarias y subgéneros.\r\n\r\nEn este sitio vas a encontrar información sobre algunas de las bandas más influyentes del heavy metal, explorando su historia, discografía, integrantes y legado.           ', 'logo_p40.png', 1, 1, '#ffffff', '#000000', 'Heavy Metal Internacional', 'E.E.S.T. N4', 'calibri', '#f70428', '#dbdbdb');
+(0, 'Heavy Metal Internacional', 'UHM', 'Universo del Heavy Metal Internacional                   ', 'El heavy metal es mucho más que un género musical: es una cultura, una forma de vida y una expresión de identidad que ha evolucionado desde finales de los años 60 hasta la actualidad. Con riffs potentes, letras profundas y una estética única, el metal ha dado lugar a innumerables bandas legendarias y subgéneros.\r\n\r\nEn este sitio vas a encontrar información sobre algunas de las bandas más influyentes del heavy metal, explorando su historia, discografía, integrantes y legado.                      ', 'logo_40.jpg', 1, 1, '#ffffff', '#000000', 'Heavy Metal Internacional', 'E.E.S.T. N4', 'calibri', '#f70428', '#dbdbdb');
 
 -- --------------------------------------------------------
 
@@ -273,18 +273,18 @@ CREATE TABLE `secciones` (
 --
 
 INSERT INTO `secciones` (`id_seccion`, `nombre`, `orden`, `id_tecnologia`, `enlace`, `Activo`, `enlace_cms`) VALUES
-(70, 'Historia', 1, 11, 'comodin.php', 1, 'comodin_cms.php'),
-(71, 'Discografia', 2, 11, 'comodin.php', 1, 'comodin_cms.php'),
-(72, 'Integrantes', 3, 11, 'comodin.php', 1, 'comodin_cms.php'),
-(77, 'Historia', 1, 13, 'comodin.php', 1, 'comodin_cms.php'),
-(78, 'Discografia', 2, 13, 'comodin.php', 1, 'comodin_cms.php'),
-(79, 'Integrantes', 3, 13, 'comodin.php', 1, 'comodin_cms.php'),
-(80, 'Historia', 1, 14, 'comodin.php', 1, 'comodin_cms.php'),
-(81, 'Discografia', 2, 14, 'comodin.php', 1, 'comodin_cms.php'),
-(82, 'Integrantes', 3, 14, 'comodin.php', 1, 'comodin_cms.php'),
-(88, 'Historia', 1, 16, 'comodin.php', 1, 'comodin_cms.php'),
-(89, 'Discografia', 2, 16, 'comodin.php', 1, 'comodin_cms.php'),
-(90, 'Integrantes', 3, 16, 'comodin.php', 1, 'comodin_cms.php');
+(1, 'Historia', 1, 1, 'comodin.php', 1, 'comodin_cms.php'),
+(2, 'Discografia', 2, 1, 'comodin.php', 1, 'comodin_cms.php'),
+(3, 'Integrantes', 3, 1, 'comodin.php', 1, 'comodin_cms.php'),
+(4, 'Historia', 1, 2, 'comodin.php', 1, 'comodin_cms.php'),
+(5, 'Discografia', 2, 2, 'comodin.php', 1, 'comodin_cms.php'),
+(6, 'Integrantes', 3, 2, 'comodin.php', 1, 'comodin_cms.php'),
+(7, 'Historia', 1, 3, 'comodin.php', 1, 'comodin_cms.php'),
+(8, 'Discografia', 2, 3, 'comodin.php', 1, 'comodin_cms.php'),
+(9, 'Integrantes', 3, 3, 'comodin.php', 1, 'comodin_cms.php'),
+(10, 'Historia', 1, 4, 'comodin.php', 1, 'comodin_cms.php'),
+(11, 'Discografia', 2, 4, 'comodin.php', 1, 'comodin_cms.php'),
+(12, 'Integrantes', 3, 4, 'comodin.php', 1, 'comodin_cms.php');
 
 -- --------------------------------------------------------
 
@@ -310,10 +310,10 @@ CREATE TABLE `tecnologias` (
 --
 
 INSERT INTO `tecnologias` (`ID_tecnologia`, `nombre`, `abreviatura`, `resumen`, `definicion`, `logo`, `orden`, `activo`, `color`, `bkg_color`) VALUES
-(11, 'Iron Maiden', 'IR', 'Introduccion a Iron Maiden           ', '<h4>Introducción</h4>\r\n<strong>Iron Maiden</strong> es una banda británica de heavy metal formada en 1975 en Londres por Steve Harris. Es una de las bandas más influyentes del género y una de las principales representantes de la New Wave of British Heavy Metal.<br><br>\r\nSu música se caracteriza por melodías elaboradas, guitarras armonizadas y letras épicas.', '', 1, 1, '', ''),
-(13, 'Black Sabbath', 'BS', 'Introduccion a Black Sabbath      ', '<h4>Introducción</h4>\r\n<strong>Black Sabbath</strong> es una banda británica formada en 1968 y considerada la creadora del heavy metal.<br><br>\r\nSu sonido oscuro y pesado revolucionó la música rock y dio origen a un nuevo género.', '', 3, 1, '', ''),
-(14, 'Metallica', 'M', 'Introduccion a Metallica', '<h4>Introducción</h4>\r\n<strong>Metallica</strong> es una banda estadounidense de thrash metal formada en 1981. Es una de las bandas más exitosas e influyentes de la historia del metal.<br><br>', '', 4, 1, '', ''),
-(16, 'Judas Priest', 'JP', 'Introduccion a Judas Priest', '<h4>Introducción</h4>\r\n<strong>Judas Priest</strong> es una banda británica formada en 1969 y una de las más influyentes en la historia del heavy metal.<br><br>\r\nAyudaron a definir tanto el sonido como la estética del género.', '', 5, 1, '', '');
+(1, 'Iron Maiden', 'IR', 'Introduccion a Iron Maiden           ', '<h4>Introducción</h4>\r\n<strong>Iron Maiden</strong> es una banda británica de heavy metal formada en 1975 en Londres por Steve Harris. Es una de las bandas más influyentes del género y una de las principales representantes de la New Wave of British Heavy Metal.<br><br>\r\nSu música se caracteriza por melodías elaboradas, guitarras armonizadas y letras épicas.', '', 1, 1, '', ''),
+(2, 'Black Sabbath', 'BS', 'Introduccion a Black Sabbath                 ', '<h4>Introducción</h4>\r\n<strong>Black Sabbath</strong> es una banda británica formada en 1968 y considerada la creadora del heavy metal.<br><br>\r\nSu sonido oscuro y pesado revolucionó la música rock y dio origen a un nuevo género.           ', '', 2, 1, '', ''),
+(3, 'Metallica', 'M', 'Introduccion a Metallica           ', '<h4>Introducción</h4>\r\n<strong>Metallica</strong> es una banda estadounidense de thrash metal formada en 1981. Es una de las bandas más exitosas e influyentes de la historia del metal.<br><br>           ', '', 3, 1, '', ''),
+(4, 'Judas Priest', 'JP', 'Introduccion a Judas Priest           ', '<h4>Introducción</h4>\r\n<strong>Judas Priest</strong> es una banda británica formada en 1969 y una de las más influyentes en la historia del heavy metal.<br><br>\r\nAyudaron a definir tanto el sonido como la estética del género.           ', '', 4, 1, '', '');
 
 -- --------------------------------------------------------
 
@@ -518,13 +518,13 @@ ALTER TABLE `recursos`
 -- AUTO_INCREMENT de la tabla `secciones`
 --
 ALTER TABLE `secciones`
-  MODIFY `id_seccion` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=91;
+  MODIFY `id_seccion` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=92;
 
 --
 -- AUTO_INCREMENT de la tabla `tecnologias`
 --
 ALTER TABLE `tecnologias`
-  MODIFY `ID_tecnologia` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=17;
+  MODIFY `ID_tecnologia` int NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=18;
 
 --
 -- AUTO_INCREMENT de la tabla `usuarios`
